@@ -88,7 +88,8 @@ Or [email me](mailto:augy@augystudios.com?subject=Report%20Issues).
   - Telegram must be installed and running.
   - Contacts must match **exactly** with Telegram usernames/phone numbers.
 
-- **File Structure**:  
+- **File Structure**:
+```
 telegram/
 ├── telegram-sender.ahk
 ├── people.txt
@@ -98,7 +99,6 @@ telegram/
 ├── Xmas-people.txt
 ├── Test-people.txt
 └── instructions.txt (auto-generated)
-
 discord/
 ├── discord-sender.ahk
 ├── people.txt
@@ -108,7 +108,6 @@ discord/
 ├── Xmas-people.txt
 ├── Test-people.txt
 └── instructions.txt (auto-generated)
-
 whatsapp/
 ├── whatsapp-sender.ahk
 ├── people.txt
@@ -118,6 +117,7 @@ whatsapp/
 ├── Xmas-people.txt
 ├── Test-people.txt
 └── instructions.txt (auto-generated)
+```
 
 ---
 
