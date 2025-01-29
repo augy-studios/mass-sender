@@ -6,7 +6,7 @@ SetWorkingDir(A_ScriptDir)
 ; Define messages and corresponding files
 messages := Map(
     "NewYear", "Happy New Year! 🎉",
-    "CNY",     "Happy Chinese New Year! 🧧", 
+    "CNY",     "Happy Lunar New Year! 🧧", 
     "Xmas",    "Merry Christmas! 🎄",
     "Morning", "Good Morning! ☀️",
     "Test",    "Test Message 🧪"
