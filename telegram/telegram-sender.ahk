@@ -70,12 +70,14 @@ ProcessInput(*)
         ExitApp
     }
     
-    ; Setup hotkeys
-    Hotkey("F2", StopScript.Bind(true, stopScriptFlag))
-    Hotkey("F4", (*) => ExitApp())
+    ; Initialize stop flag
+    global stopScriptFlag := false
+
+    ; Setup modified hotkeys
+    Hotkey("F7", (*) => stopScriptFlag := true)  ; Set flag directly
+    Hotkey("F8", (*) => ExitApp())  ; Exit script
     
     ; Main sending loop
-    stopScriptFlag := false
     for contact in toProcess {
         if stopScriptFlag {
             MsgBox("Script stopped by user.", "Info", "Iconi")
