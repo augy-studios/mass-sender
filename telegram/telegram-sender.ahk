@@ -21,7 +21,7 @@ lines := StrSplit(content, "`n", "`r")
 toProcess := []
 for line in lines {
     line := Trim(line)
-    if (line != "" && !InStr(line, "✅")) {
+    if (line != "" && !InStr(line, "?")) {
         toProcess.Push(line)
     }
 }
@@ -53,6 +53,7 @@ ProcessInput(*)
         "CNY", "Happy Chinese New Year! 🧧", 
         "Xmas", "Merry Christmas! 🎄",
         "Morning", "Good Morning! ☀️",
+        "Test", "This is a test message."
     )
     msgText := messages[selectedMsg]  ; Use stored value instead of ddl.Text
     
@@ -108,7 +109,7 @@ ProcessInput(*)
         ; Update people.txt
         Loop lines.Length {
             if (Trim(lines[A_Index]) = contact) {
-                lines[A_Index] := lines[A_Index] "✅"
+                lines[A_Index] := lines[A_Index] "?"
                 break
             }
         }
