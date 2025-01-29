@@ -86,24 +86,24 @@ ProcessInput(*)
         
         ; Activate Telegram
         try WinActivate("ahk_exe Telegram.exe")
-        Sleep(500)
+        Sleep(250)
         
         ; Search contact
         Send("{Esc}")
         Send("^f")
-        Sleep(500)
+        Sleep(250)
         A_Clipboard := contact
         Send("^v")
-        Sleep(1000)
+        Sleep(500)
         Send("{Enter}")
-        Sleep(1000)
+        Sleep(500)
         
         ; Send message
         A_Clipboard := msgText
         Send("^v")
         Sleep(300)
         Send("{Enter}")
-        Sleep(1000)
+        Sleep(500)
         
         ; Update people.txt
         Loop lines.Length {
