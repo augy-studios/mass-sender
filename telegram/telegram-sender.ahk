@@ -95,7 +95,7 @@ ProcessInput(*)
         Sleep(250)
         A_Clipboard := contact
         Send("^v")
-        Sleep(500)
+        Sleep(750)
         Send("{Enter}")
         Sleep(500)
         
