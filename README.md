@@ -92,30 +92,30 @@ Or [email me](mailto:augy@augystudios.com?subject=Report%20Issues).
 ```
 discord/
 ├── discord-sender.ahk
-├── people.txt
-├── NewYear-people.txt
-├── CNY-people.txt
-├── Morning-people.txt
-├── Xmas-people.txt
-├── Test-people.txt
+├── people.txt (auto-generated)
+├── NewYear-people.txt (auto-generated)
+├── CNY-people.txt (auto-generated)
+├── Morning-people.txt (auto-generated)
+├── Xmas-people.txt (auto-generated)
+├── Test-people.txt (auto-generated)
 └── instructions.txt (auto-generated)
 telegram/
 ├── telegram-sender.ahk
-├── people.txt
-├── NewYear-people.txt
-├── CNY-people.txt
-├── Morning-people.txt
-├── Xmas-people.txt
-├── Test-people.txt
+├── people.txt (auto-generated)
+├── NewYear-people.txt (auto-generated)
+├── CNY-people.txt (auto-generated)
+├── Morning-people.txt (auto-generated)
+├── Xmas-people.txt (auto-generated)
+├── Test-people.txt (auto-generated)
 └── instructions.txt (auto-generated)
 whatsapp/
 ├── whatsapp-sender.ahk
-├── people.txt
-├── NewYear-people.txt
-├── CNY-people.txt
-├── Morning-people.txt
-├── Xmas-people.txt
-├── Test-people.txt
+├── people.txt (auto-generated)
+├── NewYear-people.txt (auto-generated)
+├── CNY-people.txt (auto-generated)
+├── Morning-people.txt (auto-generated)
+├── Xmas-people.txt (auto-generated)
+├── Test-people.txt (auto-generated)
 └── instructions.txt (auto-generated)
 ```
 
