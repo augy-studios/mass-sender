@@ -73,17 +73,29 @@ ProcessInput(*)
         ExitApp
     }
 
-    ; Check if Telegram program exists
-    if !ProcessExist("Telegram.exe") {
-        MsgBox("Telegram is not running.", "Error", "Iconx")
+    ; Check if Discord program exists
+    discordProcesses := ["Discord.exe", "DiscordCanary.exe", "DiscordPTB.exe"]
+    openDiscords := []
+
+    for process in discordProcesses {
+        if ProcessExist(process) {
+            openDiscords.Push(process)
+        }
+    }
+
+    if openDiscords.Length = 0 {
+        MsgBox("No Discord instance is running.", "Error", "Iconx")
+        ExitApp
+    } else if openDiscords.Length > 1 {
+        MsgBox("Multiple Discord instances are running. Please close all but one.", "Error", "Iconx")
         ExitApp
     }
 
     try {
-        WinActivate("ahk_exe Telegram.exe")
-        WinWaitActive("ahk_exe Telegram.exe",, 5)
+        WinActivate("ahk_exe " openDiscords[1])
+        WinWaitActive("ahk_exe " openDiscords[1],, 5)
     } catch {
-        MsgBox("Could not activate Telegram window.", "Error", "Iconx")
+        MsgBox("Could not activate Discord window.", "Error", "Iconx")
         ExitApp
     }
 
@@ -98,8 +110,7 @@ ProcessInput(*)
         }
 
         ; Search contact
-        Send("{Esc}")
-        Send("^f")
+        Send("^k")
         Sleep(250)
         A_Clipboard := contact
         Send("^v")

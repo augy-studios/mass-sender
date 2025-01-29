@@ -73,17 +73,17 @@ ProcessInput(*)
         ExitApp
     }
 
-    ; Check if Telegram program exists
-    if !ProcessExist("Telegram.exe") {
-        MsgBox("Telegram is not running.", "Error", "Iconx")
+    ; Check if WhatsApp window exists
+    if !WinExist("WhatsApp") {
+        MsgBox("WhatsApp window not found.", "Error", "Iconx")
         ExitApp
     }
 
     try {
-        WinActivate("ahk_exe Telegram.exe")
-        WinWaitActive("ahk_exe Telegram.exe",, 5)
+        WinActivate("WhatsApp")
+        WinWaitActive("WhatsApp",, 10) ; Increased timeout to 10 seconds
     } catch {
-        MsgBox("Could not activate Telegram window.", "Error", "Iconx")
+        MsgBox("Could not activate WhatsApp window.", "Error", "Iconx")
         ExitApp
     }
 
@@ -101,9 +101,13 @@ ProcessInput(*)
         Send("{Esc}")
         Send("^f")
         Sleep(250)
+        Send("^a")
+        Send("{Backspace}")
+        Sleep(250)
         A_Clipboard := contact
         Send("^v")
         Sleep(750)
+        Send("{Down}")
         Send("{Enter}")
         Sleep(500)
         

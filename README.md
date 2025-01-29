@@ -90,8 +90,8 @@ Or [email me](mailto:augy@augystudios.com?subject=Report%20Issues).
 
 - **File Structure**:
 ```
-telegram/
-├── telegram-sender.ahk
+discord/
+├── discord-sender.ahk
 ├── people.txt
 ├── NewYear-people.txt
 ├── CNY-people.txt
@@ -99,8 +99,8 @@ telegram/
 ├── Xmas-people.txt
 ├── Test-people.txt
 └── instructions.txt (auto-generated)
-discord/
-├── discord-sender.ahk
+telegram/
+├── telegram-sender.ahk
 ├── people.txt
 ├── NewYear-people.txt
 ├── CNY-people.txt
