@@ -101,7 +101,7 @@ ProcessInput(*)
         ; Send message
         A_Clipboard := msgText
         Send("^v")
-        Sleep(300)
+        Sleep(250)
         Send("{Enter}")
         Sleep(500)
         
