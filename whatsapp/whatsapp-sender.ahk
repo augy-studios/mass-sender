@@ -100,7 +100,7 @@ ProcessInput(*)
         ; Search contact
         Send("{Esc}")
         Send("^f")
-        Sleep(250)
+        Sleep(500)
         Send("^a")
         Send("{Backspace}")
         Sleep(250)
@@ -109,7 +109,7 @@ ProcessInput(*)
         Sleep(750)
         Send("{Down}")
         Send("{Enter}")
-        Sleep(500)
+        Sleep(750)
         
         ; Send message
         A_Clipboard := msgText
