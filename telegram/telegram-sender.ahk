@@ -5,7 +5,7 @@ SetWorkingDir(A_ScriptDir)
 
 ; Create instructions.txt
 if !FileExist("instructions.txt") {
-    FileAppend("F2 key to force stop the script`nF4 key to force close the AHK", "instructions.txt")
+    FileAppend("F7 key to force stop the script`nF8 key to force close the AHK", "instructions.txt")
 }
 
 ; Check if people.txt exists
@@ -35,7 +35,7 @@ if (toProcess.Length = 0) {
 myGui := Gui()
 myGui.Title := "Message Selector"
 myGui.Add("Text",, "Select message to send:")
-ddl := myGui.Add("DropDownList", "vMsgChoice w150", ["NewYear", "CNY", "Xmas"])
+ddl := myGui.Add("DropDownList", "vMsgChoice w150", ["NewYear", "CNY", "Xmas", "Morning"])
 myGui.Add("Button", "Default w80", "OK").OnEvent("Click", ProcessInput)
 myGui.Show()
 
