@@ -85,9 +85,11 @@ ProcessInput(*)
         Sleep(500)
         
         ; Search contact
+        Send("{Esc}")
         Send("^f")
         Sleep(500)
-        Send(contact)
+        A_Clipboard := contact
+        Send("^v")
         Sleep(1000)
         Send("{Enter}")
         Sleep(1000)
