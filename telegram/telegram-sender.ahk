@@ -63,7 +63,7 @@ ProcessInput(*)
     toProcess := []
     for line in lines {
         line := Trim(line)
-        if (line != "" && !InStr(line, "✅")) {
+        if (line != "" && !InStr(line, "?")) {
             toProcess.Push(line)
         }
     }
@@ -117,7 +117,7 @@ ProcessInput(*)
         ; Update selected message file
         Loop lines.Length {
             if (Trim(lines[A_Index]) = contact) {
-                lines[A_Index] := lines[A_Index] "✅"
+                lines[A_Index] := lines[A_Index] "?"
                 break
             }
         }
