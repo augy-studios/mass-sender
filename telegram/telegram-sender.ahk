@@ -35,7 +35,7 @@ if (toProcess.Length = 0) {
 myGui := Gui()
 myGui.Title := "Message Selector"
 myGui.Add("Text",, "Select message to send:")
-ddl := myGui.Add("DropDownList", "vMsgChoice w150", ["NewYear", "CNY", "Xmas", "Morning"])
+ddl := myGui.Add("DropDownList", "vMsgChoice w150", ["NewYear", "CNY", "Xmas", "Morning", "Test"])
 myGui.Add("Button", "Default w80", "OK").OnEvent("Click", ProcessInput)
 myGui.Show()
 
