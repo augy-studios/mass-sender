@@ -89,33 +89,33 @@ Or [email me](mailto:augy@augystudios.com?subject=Report%20Issues).
   - Contacts must match **exactly** with Telegram usernames/phone numbers.
 
 - **File Structure**:  
-telegram/
-├── telegram-sender.ahk
-├── people.txt
-├── NewYear-people.txt
-├── CNY-people.txt
-├── Morning-people.txt
-├── Xmas-people.txt
-├── Test-people.txt
-└── instructions.txt (auto-generated)
-discord/
-├── discord-sender.ahk
-├── people.txt
-├── NewYear-people.txt
-├── CNY-people.txt
-├── Morning-people.txt
-├── Xmas-people.txt
-├── Test-people.txt
-└── instructions.txt (auto-generated)
-whatsapp/
-├── whatsapp-sender.ahk
-├── people.txt
-├── NewYear-people.txt
-├── CNY-people.txt
-├── Morning-people.txt
-├── Xmas-people.txt
-├── Test-people.txt
-└── instructions.txt (auto-generated)
+  telegram/
+  ├── telegram-sender.ahk
+  ├── people.txt
+  ├── NewYear-people.txt
+  ├── CNY-people.txt
+  ├── Morning-people.txt
+  ├── Xmas-people.txt
+  ├── Test-people.txt
+  └── instructions.txt (auto-generated)
+  discord/
+  ├── discord-sender.ahk
+  ├── people.txt
+  ├── NewYear-people.txt
+  ├── CNY-people.txt
+  ├── Morning-people.txt
+  ├── Xmas-people.txt
+  ├── Test-people.txt
+  └── instructions.txt (auto-generated)
+  whatsapp/
+  ├── whatsapp-sender.ahk
+  ├── people.txt
+  ├── NewYear-people.txt
+  ├── CNY-people.txt
+  ├── Morning-people.txt
+  ├── Xmas-people.txt
+  ├── Test-people.txt
+  └── instructions.txt (auto-generated)
 
 ---
 
