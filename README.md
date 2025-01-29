@@ -89,23 +89,32 @@ Or [email me](mailto:augy@augystudios.com?subject=Report%20Issues).
   - Contacts must match **exactly** with Telegram usernames/phone numbers.
 
 - **File Structure**:  
-telegram-sender/
+telegram/
 ├── telegram-sender.ahk
 ├── people.txt
 ├── NewYear-people.txt
 ├── CNY-people.txt
+├── Morning-people.txt
+├── Xmas-people.txt
+├── Test-people.txt
 └── instructions.txt (auto-generated)
-discord-sender/
+discord/
 ├── discord-sender.ahk
 ├── people.txt
 ├── NewYear-people.txt
 ├── CNY-people.txt
+├── Morning-people.txt
+├── Xmas-people.txt
+├── Test-people.txt
 └── instructions.txt (auto-generated)
-whatsapp-sender/
+whatsapp/
 ├── whatsapp-sender.ahk
 ├── people.txt
 ├── NewYear-people.txt
 ├── CNY-people.txt
+├── Morning-people.txt
+├── Xmas-people.txt
+├── Test-people.txt
 └── instructions.txt (auto-generated)
 
 ---
