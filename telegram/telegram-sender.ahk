@@ -43,7 +43,9 @@ ProcessInput(*)
 {
     global
     myGui.Submit()
-    myGui.Destroy()
+    ; Store the selected text BEFORE destroying GUI
+    selectedMsg := ddl.Text
+    myGui.Destroy()  ; Now destroy GUI after capturing the value
     
     ; Define messages
     messages := Map(
@@ -52,7 +54,7 @@ ProcessInput(*)
         "Xmas", "Merry Christmas! 🎄",
         "Morning", "Good Morning! ☀️",
     )
-    msgText := messages[ddl.Text]
+    msgText := messages[selectedMsg]  ; Use stored value instead of ddl.Text
     
     ; Check Telegram status
     if !ProcessExist("Telegram.exe") {
