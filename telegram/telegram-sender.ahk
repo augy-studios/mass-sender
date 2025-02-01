@@ -9,7 +9,8 @@ messages := Map(
     "CNY",     "Happy Lunar New Year! 🧧", 
     "Xmas",    "Merry Christmas! 🎄",
     "Morning", "Good Morning! ☀️",
-    "Test",    "Test Message 🧪"
+    "Test",    "Test Message 🧪",
+    "Custom",  ""  ; Empty value for custom message
 )
 
 ; Create instructions.txt
@@ -46,16 +47,34 @@ ddl := myGui.Add("DropDownList", "vMsgChoice w150", keys)
 myGui.Add("Button", "Default w80", "OK").OnEvent("Click", ProcessInput)
 myGui.Show()
 
-ProcessInput(*)
-{
+ProcessInput(*) {
     global
     myGui.Submit()
     selectedMsg := ddl.Text
     myGui.Destroy()
+
+    ; Handle Custom Message input
+    if (selectedMsg = "Custom") {
+        customGui := Gui()
+        customGui.Title := "Custom Message"
+        customGui.Add("Text",, "Enter your custom message:")
+        customEdit := customGui.Add("Edit", "w300 r5")
+        customGui.Add("Button", "Default w80", "OK").OnEvent("Click", (*) => customGui.Submit())
+        customGui.Show()
+        
+        WinWaitClose(customGui)
+        msgText := Trim(customEdit.Value)
+        
+        if (msgText = "") {
+            MsgBox("Custom message cannot be empty!", "Error", "Iconx")
+            ExitApp
+        }
+    } else {
+        msgText := messages[selectedMsg]
+    }
     
     ; Use selected message file
     selectedFile := selectedMsg "-people.txt"
-    msgText := messages[selectedMsg]
 
     ; Read from selected file
     content := FileRead(selectedFile)
