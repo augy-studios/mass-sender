@@ -124,3 +124,8 @@ whatsapp/
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+Buy me a coffee!
+https://donate.stripe.com/28o2akeAr3hv0DK6oo
